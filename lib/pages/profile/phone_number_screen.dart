@@ -11,6 +11,10 @@ class PhoneNumberScreen extends StatefulWidget {
 }
 
 class _PhoneNumberScreenState extends State<PhoneNumberScreen> {
+  void onPressLogIn(BuildContext context) {
+    Navigator.pushNamed(context, '/profile/phone_number/pin_code_screen');
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -59,7 +63,7 @@ class _PhoneNumberScreenState extends State<PhoneNumberScreen> {
             const Spacer(),
             AmbulanceButton(
               text: 'Далее',
-              onPressed: () {},
+              onPressed: () => onPressLogIn(context),
             ),
             const SizedBox(height: 20),
           ],

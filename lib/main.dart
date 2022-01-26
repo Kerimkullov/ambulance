@@ -1,4 +1,6 @@
+import 'package:ambulance/const/widgets/bottom_navigation.dart';
 import 'package:ambulance/pages/profile/phone_number_screen.dart';
+import 'package:ambulance/pages/profile/pin_code_screen.dart';
 import 'package:ambulance/pages/profile/profile_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -16,8 +18,10 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(primarySwatch: Colors.grey, primaryColor: Colors.white),
       routes: {
-        '/': (context) => const ProfileScreen(),
+        '/': (context) => const BottomNavigation(),
         '/profile/phone_number': (context) => const PhoneNumberScreen(),
+        '/profile/phone_number/pin_code_screen': (context) =>
+            const PinCodeScreen()
       },
     );
   }

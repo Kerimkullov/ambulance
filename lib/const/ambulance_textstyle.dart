@@ -15,4 +15,10 @@ class AmbulanceTextStyle {
 
   static const TextStyle sfW700S34 =
       TextStyle(fontSize: 34, fontWeight: FontWeight.w700);
+
+  static const TextStyle sfW500S10 =
+      TextStyle(fontSize: 10, fontWeight: FontWeight.w500);
+
+  static const TextStyle sfW500S10White =
+      TextStyle(fontSize: 10, fontWeight: FontWeight.w500, color: Colors.white);
 }
